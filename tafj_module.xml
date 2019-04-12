@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright 2010, Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags. See the copyright.txt file in the
+  ~ distribution for a full listing of individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+
+<module xmlns="urn:jboss:module:1.0" name="com.PLUTO.temenos.tafj">
+  <resources>
+    <!-- Insert resources here -->
+    <resource-root path="/lib/antlr.jar"/>
+    <resource-root path="/lib/icu4j.jar"/>
+    <resource-root path="/lib/jremote.jar"/>
+    <resource-root path="/lib/log4j-api.jar"/>
+    <resource-root path="/lib/log4j-core.jar"/>
+    <resource-root path="/lib/cache-api.jar"/>
+    <resource-root path="/lib/T24CollectorClient.jar"/>
+    <resource-root path="/lib/TemenosSecurity.jar"/>
+    <resource-root path="/lib/TAFJClient.jar"/>
+    <resource-root path="/lib/TAFJCommon.jar"/>
+    <resource-root path="/lib/TAFJCache.jar"/>
+    <resource-root path="/lib/TAFJCompiler.jar"/>
+    <resource-root path="/lib/TAFJCore.jar"/>
+    <resource-root path="/lib/TAFJLogging.jar"/>
+    <resource-root path="/lib/TAFJLocking.jar"/>
+    <resource-root path="/lib/TAFJTelnetD.jar"/>
+    <resource-root path="/lib/TAFJVersion.jar"/>
+    <resource-root path="/ext/TAFJBASIC.jar"/>
+    <resource-root path="/ext/tComponentFramework.jar"/>
+    <resource-root path="/ext/DBTools.jar"/>
+    <resource-root path="/ext/XmltoDelim.jar"/>
+
+    <!-- RulesEngine jars -->
+    <resource-root path="/rules/RulesEngine.jar"/>
+    <resource-root path="/rules/antlr.jar"/>
+    <resource-root path="/rules/commons-codec.jar"/>
+    <resource-root path="/rules/commons-io.jar"/>
+  </resources>
+  <dependencies>
+    <module name="com.PLUTO.temenos.t24"/>
+    <module name="com.microsoft.sqlserver"/>
+
+    <module name="javax.api"/>
+    <module name="javaee.api"/>
+    <module name="javax.jms.api"/>
+  </dependencies>
+</module>
